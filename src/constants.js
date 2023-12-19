@@ -1,3 +1,9 @@
+export const BREAKPOINTS = {
+  tabletMin: 550,
+  laptopMin: 1100,
+  desktopMin: 1500,
+};
+
 export const COLORS = {
   white: 'hsl(0deg 0% 100%)',
   offblack: 'hsl(24deg 5% 6%)',
@@ -13,16 +19,11 @@ export const COLORS = {
   urgent: 'hsl(0deg 55% 54%)',
 };
 
-export const WEIGHTS = {
-  normal: 400,
-  medium: 550,
-  bold: 700,
-};
-
-export const BREAKPOINTS = {
-  tabletMin: 550,
-  laptopMin: 1100,
-  desktopMin: 1500,
+export const FAMILIES = {
+  serif: '"Crimson Pro", Georgia, serif',
+  sansSerif:
+    '"Helvetica Neue", Helvetica, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif',
+  logo: 'Chomsky',
 };
 
 export const QUERIES = {
@@ -34,9 +35,17 @@ export const QUERIES = {
     (max-width: ${(BREAKPOINTS.laptopMin - 1) / 16}rem)`,
 };
 
-export const FAMILIES = {
-  serif: '"Crimson Pro", Georgia, serif',
-  sansSerif:
-    '"Helvetica Neue", Helvetica, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif',
-  logo: 'Chomsky',
+export const WEIGHTS = {
+  normal: 400,
+  medium: 550,
+  bold: 700,
 };
+
+
+export const THEME = {
+  BREAKPOINTS,
+  COLORS,
+  FAMILIES,
+  QUERIES,
+  WEIGHTS
+}

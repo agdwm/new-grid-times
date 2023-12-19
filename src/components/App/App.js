@@ -7,9 +7,12 @@ import Spacer from '../Spacer';
 import MainStoryGrid from '../MainStoryGrid';
 import SpecialtyStoryGrid from '../SpecialtyStoryGrid';
 
+import { THEME as theme } from '../../constants';
+import { ThemeProvider } from 'styled-components'
+
 const App = () => {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header />
       <MaxWidthWrapper as="main">
         <MainStoryGrid />
@@ -17,7 +20,7 @@ const App = () => {
       </MaxWidthWrapper>
       <Spacer size={64} />
       <Footer />
-    </>
+    </ThemeProvider>
   );
 };
 

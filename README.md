@@ -4,6 +4,9 @@ In this workshop, our goal is to build a sophisticated, responsive grid layout f
 
 ![Desktop-sized mockup](/docs/desktop-mockup.png)
 
+## Figma design
+[Figma design](https://www.figma.com/file/BDdNhCeVLye5mFHHxQhkgE/New-Grid-Times?type=design&node-id=0-1&mode=design)
+
 ## Code structure
 
 Like the last few workshops, this is a React / styled-components application.
