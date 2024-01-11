@@ -33,7 +33,7 @@ const MainStoryGrid = () => {
       <OpinionSection>
         <SectionTitle>Opinion</SectionTitle>
         <StoryList>
-          {OPINION_STORIES.map((story, index) => (
+          {OPINION_STORIES.map((story) => (
             <VerticalStoryWrapper key={story.id}>
               <OpinionStory {...story} />
             </VerticalStoryWrapper>
@@ -82,6 +82,8 @@ const VerticalStoryWrapper = styled.div`
 
 const OpinionSection = styled.section`
   grid-area: opinion-stories;
+
+
 `;
 
 const AdvertisementSection = styled.section`
