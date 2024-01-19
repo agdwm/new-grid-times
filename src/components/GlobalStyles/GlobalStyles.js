@@ -93,6 +93,7 @@ html {
     Silence the warning about missing Reach Dialog styles
   */
   --reach-dialog: 1;
+  scroll-behavior: smooth;
 }
 
 html, body, #root {
