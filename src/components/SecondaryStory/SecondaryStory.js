@@ -21,9 +21,8 @@ const Wrapper = styled.article`
   gap: 4px 16px;
   grid-template-columns: 120px 1fr;
   color: var(--color-gray-900);
-  container-type: block-size;
 
-  @container (width <= 300px) {
+  @media ${props => props.theme.QUERIES.tabletOnly} {
     grid-template-areas:
     'image'
     'heading'
